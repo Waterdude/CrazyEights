@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.waterdu.crazyeights.CrazyEightsController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label text="Opponent:">
+      <font>
+         <Font size="15.0" />
+      </font></Label>
+   <TextField fx:id="oppo" promptText="12 34 56 78">
+      <font>
+         <Font size="16.0" />
+      </font></TextField>
+   <Label text="You:">
+      <font>
+         <Font size="15.0" />
+      </font></Label>
+   <TextField fx:id="your" promptText="12 34 56 78">
+      <font>
+         <Font size="16.0" />
+      </font></TextField>
+   <HBox alignment="CENTER" spacing="5.0">
+      <children>
+          <Button fx:id="calc" onAction="#onCalculate" text="Calculate">
+            <font>
+               <Font size="15.0" />
+            </font></Button>
+         <Button fx:id="reset" onAction="#onReset" text="Reset">
+            <font>
+               <Font size="15.0" />
+            </font></Button>
+      </children>
+      <padding>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </padding>
+   </HBox>
+</VBox>
